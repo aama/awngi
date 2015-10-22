@@ -2008,7 +2008,7 @@
 	    [:Common, :Singular, :Person2, "destayasɣá"]]
     }}
 :muterms #{
-    {:label "Pronominal Paradigms to be added"
+    {:label "Pronominal_Paradigms_to_be_added"
     :common {:morpheme :TOBEADDED,
 	    :pos :Pronoun,
 	    :proClass :To_be_added}

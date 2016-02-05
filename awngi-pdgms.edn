@@ -2,7 +2,7 @@
 :lang :awngi
 :sgpref "awn"
 :datasource "Hetzron1969b"
-:datasourceNote "Hetzron1969b, Chapter 2, 'Verb Classes',  recognizes some 40 inflectional classes subdividing both the prefix and suffix-conjugation verbs. These are based on intersecting criteria of: 'Pattern' (base tone-pattern), 'Type' (associated png-marker set), and 'Group' (tone-effect on subsequent syllable). Pending a proper feature analysis, these inflectional classes are here designated according to the decimal subdivision of Chapter 2 where each class is identified."
+:datasourceNote "Hetzron1969b, Chapter 2, 'Verb Classes',  recognizes some 40 inflectional classes subdividing both the prefix and suffix-conjugation verbs. These are based on intersecting criteria of: 'Pattern' (base tone-pattern), 'Type' (associated png-marker set), and 'Group' (tone-effect on subsequent syllable). Pending a more thorough-going analysis, these classes are taken as brute inflectional classes, and are here designated according to the decimal subdivision of Chapter 2 where each class is identified."
 :geodemoURL "http://www.ethnologue.com/language/awn"
 :geodemoTXT "Varieties and subdialects of Agaw (or Central) Cushitic language: Awngi is spoken mainly in the Amhara region, southwest of Lake Tana, and in scattered nearby localities. The variety represented here is that of the village of Bert'a Abbo in the province of Agawmeder, as described by Robert Hetzron in his 1969 monograph."
 :schemata {
@@ -49,6 +49,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "ə́ynûs"],
@@ -65,6 +66,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "jewáni"],
@@ -82,6 +84,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -121,6 +124,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -139,16 +143,17 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "taɣéka"],
-	    [:Common, :Plural, :Person1, "aɣnâ"],
-	    [:Common, :Singular, :Person2, "taɣâ"],
-	    [:Masc, :Singular, :Person3, "yaɣâ"],
-	    [:Common, :Plural, :Person3, "yaɣéka"],
-	    [:Fem, :Singular, :Person3, "taɣâ"],
-	    [:Common, :Singular, :Person1, "aqâ"]]
+	    [:Common, :Plural, :Person2, "t-aɣ-éka"],
+	    [:Common, :Plural, :Person1, "aɣ-n-â"],
+	    [:Common, :Singular, :Person2, "t-aɣ-â"],
+	    [:Masc, :Singular, :Person3, "y-aɣ-â"],
+	    [:Common, :Plural, :Person3, "y-aɣ-éka"],
+	    [:Fem, :Singular, :Person3, "t-aɣ-â"],
+	    [:Common, :Singular, :Person1, "aq-â"]]
     }
     {:label "awngi-VMainImperfIndef-ne"
     :note "Hetzron1969 pp. 118-121"
@@ -157,6 +162,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -230,6 +236,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -248,6 +255,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -265,6 +273,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "əyání"],
@@ -281,6 +290,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "əɣóɣnání"],
@@ -297,6 +307,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "kantûs"],
@@ -314,6 +325,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -330,7 +342,8 @@
     :common {:clauseType :Protasis,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -348,6 +361,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "əɣóɣnə́mba"],
@@ -380,6 +394,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -415,7 +430,8 @@
 	    :aspect :Definite,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -434,16 +450,17 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "yáɣánà"],
-	    [:Common, :Singular, :Person1, "áqé"],
-	    [:Common, :Plural, :Person2, "táɣánà"],
-	    [:Masc, :Singular, :Person3, "yáɣé"],
-	    [:Fem, :Singular, :Person3, "táɣé"],
-	    [:Common, :Singular, :Person2, "táɣé"],
-	    [:Common, :Plural, :Person1, "áɣné"]]
+	    [:Common, :Plural, :Person3, "y-áɣ-ánà"],
+	    [:Common, :Singular, :Person1, "áq-é"],
+	    [:Common, :Plural, :Person2, "t-áɣ-ánà"],
+	    [:Masc, :Singular, :Person3, "y-áɣ-é"],
+	    [:Fem, :Singular, :Person3, "t-áɣ-é"],
+	    [:Common, :Singular, :Person2, "t-áɣ-é"],
+	    [:Common, :Plural, :Person1, "áɣ-n-é"]]
     }
     {:label "awngi-VDurativeNegConverb-des"
     :note "Hetzron1969 1.3.3"
@@ -471,6 +488,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -488,6 +506,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -505,6 +524,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "kantáni"],
@@ -574,6 +594,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -592,6 +613,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -645,7 +667,8 @@
 	    :aspect :Definite,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -664,6 +687,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -718,6 +742,7 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "taɣínimba"],
@@ -771,6 +796,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person2, "nimba"],
@@ -788,6 +814,7 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -806,6 +833,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -823,6 +851,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person3, "nûs"],
@@ -856,6 +885,7 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -911,16 +941,17 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "jewtánà"],
-	    [:Fem, :Singular, :Person3, "jewté"],
-	    [:Masc, :Singular, :Person3, "jewé"],
-	    [:Common, :Singular, :Person2, "jewté"],
-	    [:Common, :Plural, :Person1, "jewné"],
-	    [:Common, :Singular, :Person1, "jepé"],
-	    [:Common, :Plural, :Person3, "jewánà"]]
+	    [:Common, :Plural, :Person2, "jew-t-ánà"],
+	    [:Fem, :Singular, :Person3, "jew-t-é"],
+	    [:Masc, :Singular, :Person3, "jew-é"],
+	    [:Common, :Singular, :Person2, "jew-t-é"],
+	    [:Common, :Plural, :Person1, "jew-n-é"],
+	    [:Common, :Singular, :Person1, "jep-é"],
+	    [:Common, :Plural, :Person3, "jew-ánà"]]
     }
     {:label "awngi-VDurativePerf-egog"
     :note "Hetzron1969 pp. 118-121"
@@ -929,6 +960,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -946,7 +978,8 @@
 	    :aspect :Indefinite,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -964,6 +997,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "fanémba"],
@@ -999,7 +1033,8 @@
     :common {:clauseType :Terminative,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "ləqləqinimba"],
@@ -1017,6 +1052,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1034,6 +1070,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "əɣóɣtûs"],
@@ -1085,7 +1122,8 @@
 	    :aspect :Definite,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1104,6 +1142,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1122,6 +1161,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1212,7 +1252,8 @@
     :common {:clauseType :Stative,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "ləqləqanis"],
@@ -1229,6 +1270,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person3, "əytə́mba"],
@@ -1245,6 +1287,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "jewtínimba"],
@@ -1296,6 +1339,7 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "áqání"],
@@ -1331,6 +1375,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1402,6 +1447,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1437,7 +1483,8 @@
 	    :aspect :Indefinite,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1471,6 +1518,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1489,6 +1537,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1506,6 +1555,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1542,6 +1592,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "fanání"],
@@ -1558,6 +1609,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person2, "není"],
@@ -1593,6 +1645,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1609,7 +1662,8 @@
     :common {:clauseType :Temporal,
 	    :conjClass :Suffix,
             :conjSubClass :IC1342,
-            :lexeme :leqleq,
+            :lexeme :leqlea,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "ləqləqani"],
@@ -1646,6 +1700,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1663,6 +1718,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1697,6 +1753,7 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person2, "táɣûs"],
@@ -1714,6 +1771,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1749,6 +1807,7 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1822,6 +1881,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1840,6 +1900,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1912,6 +1973,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1214,
             :lexeme :ey,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1930,6 +1992,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1947,6 +2010,7 @@
 	    :conjClass :Prefix,
             :conjSubClass :IC11,
             :lexeme :aq,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1964,6 +2028,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1611,
             :lexeme :ne,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -2072,16 +2137,17 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "jewtéka"],
-	    [:Common, :Singular, :Person1, "jepâ"],
-	    [:Masc, :Singular, :Person3, "jewâ"],
-	    [:Common, :Plural, :Person1, "jewnâ"],
-	    [:Common, :Plural, :Person3, "jewéka"],
-	    [:Fem, :Singular, :Person3, "jewtâ"],
-	    [:Common, :Singular, :Person2, "jewtâ"]]
+	    [:Common, :Plural, :Person2, "jew-t-éka"],
+	    [:Common, :Singular, :Person1, "jep-â"],
+	    [:Masc, :Singular, :Person3, "jew-â"],
+	    [:Common, :Plural, :Person1, "jew-n-â"],
+	    [:Common, :Plural, :Person3, "jew-éka"],
+	    [:Fem, :Singular, :Person3, "jew-t-â"],
+	    [:Common, :Singular, :Person2, "jew-t-â"]]
     }
     {:label "awngi-VStative-fay"
     :note "Hetzron1969 pp. 118-121"
@@ -2089,6 +2155,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "fayánis"],
@@ -2141,6 +2208,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -2175,6 +2243,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC15112,
             :lexeme :egog,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -2208,6 +2277,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC142,
             :lexeme :fay,
+            :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -2225,6 +2295,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1221,
             :lexeme :jep,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "jewnús"],
@@ -2241,6 +2312,7 @@
 	    :conjClass :Suffix,
             :conjSubClass :IC1351b,
             :lexeme :kant,
+            :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "kantnə́mba"],

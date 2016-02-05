@@ -2,17 +2,20 @@
 :lang :awngi
 :sgpref "awn"
 :datasource "Hetzron1969b"
+:datasourceNote "Hetzron1969b, Chapter 2, 'Verb Classes',  recognizes some 40 inflectional classes subdividing both the prefix and suffix-conjugation verbs. These are based on intersecting criteria of: 'Pattern' (base tone-pattern), 'Type' (associated png-marker set), and 'Group' (tone-effect on subsequent syllable). Pending a proper feature analysis, these inflectional classes are here designated according to the decimal subdivision of Chapter 2 where each class is identified."
 :geodemoURL "http://www.ethnologue.com/language/awn"
 :geodemoTXT "Varieties and subdialects of Agaw (or Central) Cushitic language: Awngi is spoken mainly in the Amhara region, southwest of Lake Tana, and in scattered nearby localities. The variety represented here is that of the village of Bert'a Abbo in the province of Agawmeder, as described by Robert Hetzron in his 1969 monograph."
 :schemata {
-:clauseType [:Apodosis, :Compound, :Converb, :Desiderative, :Durative, :Exobligative, :Immediate, :Main, :Posterior, :Predestinative, :Processive, :Protasis, :RelSubj, :Stative, :Subjunctive, :Subordinate, :Temporal, :Terminative]
-	  :defClass [:Definite, :Indefinite, :Neutral]
+:clauseType [:Apodosis, :Compound, :Consecutive, :Desiderative, :Durative, :Exobligative, :Immediate, :Main, :Posterior, :Predestinative, :Processive, :Protasis, :RelSubj, :Stative, :Subjunctive, :Subordinate, :Temporal, :Terminative]
+	  :aspect [:Definite, :Indefinite, :Neutral]
+           :conjClass [:Prefix, :Suffix]
+           :conjSubClass [:IC11, :IC1211, :IC1221, :IC1214, :IC1351b, :IC1342, :IC142, :IC15112, :IC1611]
 	  :gender [:Common, :Fem, :Masc]
 	  :number [:Plural, :Singular]
 	  :person [:Person1, :Person2, :Person3]
 	  :polarity [:Affirmative, :Negative]
 	  :pos [:Pronoun :Verb]
-	  :tam [:Converb, :Definite, :Imperative, :Imperfect, :Order, :Perfect]
+	  :tam [:Converb, :Imperative, :Imperfect, :Order, :Perfect]
 	  :varB [:VarB1, :VarB2, :VarB3, :VarBx]
 	  :varClass [:Var1, :Var2, :VarA, :VarB]
 	  :morphClass [:SuffAlternate]
@@ -22,28 +25,30 @@
 :pclass {
            :pngClass [:person :number :gender ]
            :synsemClass [:case :clausetype :derivedStem :polarity :pos :proClass :tam :tenseName ]
-           :inflClass [:varClass :varB   ]
+           :inflClass [:varClass :varB :conjClass :conjSubClass]
            :otherClass [ ]
           }
 :morphemes {
   :TOBEADDED {:gloss "[x]", :lemma "[y]", }
 }
 :lexemes {
-  :aq {:gloss "know", :lemma "yaɣəŋ", :pos :Verb}
-  :des {:gloss "study", :lemma "däs-", :pos :Verb}
-  :egog {:gloss "laugh", :lemma "əɣoɣiŋ", :pos :Verb}
-  :ey {:gloss "give", :lemma "əyəŋ", :pos :Verb}
-  :fay {:gloss "want, look for", :lemma "fayŋ", :pos :Verb}
-  :jep {:gloss "buy", :lemma "jewŋ", :pos :Verb}
-  :kant {:gloss "see, look for", :lemma "kantəŋ", :pos :Verb}
-  :leqleq {:gloss "sway", :lemma "ləqləqiŋ", :pos :Verb}
-  :ne {:gloss "say", :lemma "nəŋ", :pos :Verb}
+  :aq {:gloss "be", :lemma "yaɣəŋ",  :pos :Verb, :conjClass :Prefix, :conjSubClass :IC11}
+  :des {:gloss "study", :lemma "desəŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1211}
+  :egog {:gloss "laugh", :lemma "əɣoɣiŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC15112}
+  :ey {:gloss "give", :lemma "əyəŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1214}
+  :fay {:gloss "want, look for", :lemma "fayŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC142}
+  :jep {:gloss "buy", :lemma "jewŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1221}
+  :kant {:gloss "see, look for", :lemma "kantəŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1351b}
+  :leqleq {:gloss "sway", :lemma "ləqləqiŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1342}
+  :ne {:gloss "say", :lemma "nəŋ",  :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1611}
 }
 :lxterms #{
     {:label "awngi-VStative-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :ey,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "ə́ynûs"],
@@ -57,7 +62,9 @@
     {:label "awngi-VTemporal-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :jep,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "jewáni"],
@@ -71,8 +78,10 @@
     {:label "awngi-VMainImperfDef-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :egog,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -86,7 +95,9 @@
     }
     {:label "awngi-VImprtvVarB-des"
     :note "Hetzron1969 1.4.1"
-    :common {:lexeme :des,
+    :common {:conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Imperative,
 	    :morphClass :SuffAlternate}
@@ -106,8 +117,10 @@
     {:label "awngi-VMainImperfIndef-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :kant,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -122,8 +135,10 @@
     {:label "awngi-VMainPerfIndef-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :aq,
+	    :aspect :Indefinite,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -138,8 +153,10 @@
     {:label "awngi-VMainImperfIndef-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :ne,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -154,7 +171,9 @@
     {:label "awngi-VProcessiveAff-des"
     :note "Hetzron1969 1.2.1-3"
     :common {:clauseType :Processive,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -169,8 +188,10 @@
     {:label "awngi-VPredestinativePerfIndef-des"
     :note "Hetzron1969 1.4.1"
     :common {:clauseType :Predestinative,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token, :varB]  ;; schema
@@ -187,7 +208,9 @@
     {:label "awngi-VMainAffImprtv-des"
     :note ""
     :common {:clauseType :Main,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperative}
@@ -203,8 +226,10 @@
     {:label "awngi-VMainPerfIndef-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :egog,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -219,8 +244,10 @@
     {:label "awngi-VDurativePerf-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :fay,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -235,7 +262,9 @@
     {:label "awngi-VTemporal-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :ey,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "əyání"],
@@ -249,7 +278,9 @@
     {:label "awngi-VTemporal-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :egog,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "əɣóɣnání"],
@@ -263,7 +294,9 @@
     {:label "awngi-VStative-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :kant,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "kantûs"],
@@ -277,8 +310,10 @@
     {:label "awngi-VMainPerfDef-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :fay,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -293,7 +328,9 @@
     {:label "awngi-VProtasisImperf-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :leqleq,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -308,7 +345,9 @@
     {:label "awngi-VTerminative-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :egog,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "əɣóɣnə́mba"],
@@ -323,7 +362,9 @@
     :note ""
     :common {:clauseType :Main,
 	    :gender :Common,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :person :Person2,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -335,8 +376,10 @@
     {:label "awngi-VMainImperfDef-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :kant,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -351,8 +394,10 @@
     {:label "awngi-VApodosisNegDef-des"
     :note "Hetzron1969 1.2.13"
     :common {:clauseType :Apodosis,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -367,8 +412,10 @@
     {:label "awngi-VMainPerfDef-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :leqleq,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -383,8 +430,10 @@
     {:label "awngi-VMainImperfIndef-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :aq,
+	    :aspect :Indefinite,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -399,8 +448,10 @@
     {:label "awngi-VDurativeNegConverb-des"
     :note "Hetzron1969 1.3.3"
     :common {:clauseType :Durative,
-	    :defClass :Neutral,
-	    :lexeme :des,
+	    :aspect :Neutral,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Converb}
@@ -416,8 +467,10 @@
     {:label "awngi-VDurativePerfDef-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :ey,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -432,7 +485,9 @@
     {:label "awngi-VProtasisImperf-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :jep,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -447,7 +502,9 @@
     {:label "awngi-VTemporal-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :kant,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "kantáni"],
@@ -461,8 +518,10 @@
     {:label "awngi-VApodosisNegIndef-des"
     :note "Hetzron1969 1.2.13"
     :common {:clauseType :Apodosis,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -477,9 +536,11 @@
     {:label "awngi-VExobligativeNegConverb-des"
     :note "Hetzron1969 1.4.2"
     :common {:clauseType :Exobligative,
-	    :defClass :Neutral,
+	    :aspect :Neutral,
 	    :gender :Common,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :number :Singular,
 	    :person :Person1,
 	    :polarity :Negative,
@@ -491,7 +552,9 @@
     {:label "awngi-VStativePerfVar1-des"
     :note "Hetzron1969 1.2.8"
     :common {:clauseType :Stative,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Perfect,
 	    :varClass :Var1}
@@ -507,8 +570,10 @@
     {:label "awngi-VMainPerfDef-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :jep,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -523,8 +588,10 @@
     {:label "awngi-VMainPerfIndef-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :kant,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -539,7 +606,9 @@
     {:label "awngi-VProtasisNegImperf-des"
     :note "Hetzron1969 1.2.12"
     :common {:clauseType :Protasis,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -555,7 +624,9 @@
     {:label "awngi-VProtasisAffImperf-des"
     :note "Hetzron1969 1.2.12"
     :common {:clauseType :Protasis,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -571,8 +642,10 @@
     {:label "awngi-VDurativePerf-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :leqleq,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -587,8 +660,10 @@
     {:label "awngi-VMainPerfDef-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :egog,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -603,8 +678,10 @@
     {:label "awngi-VMainAffPerfIndef-des"
     :note "STRUCTURE:\n\r\n\r/STRUCTURE\nCONTENT:\n\r\n\r/CONTENT"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
@@ -620,8 +697,10 @@
     {:label "awngi-VApodosisAffDef-des"
     :note "Hetzron1969 1.2.13"
     :common {:clauseType :Apodosis,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -636,7 +715,9 @@
     {:label "awngi-VTerminative-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :aq,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "taɣínimba"],
@@ -650,8 +731,10 @@
     {:label "awngi-VExobligativeAffConverb-des"
     :note "Hetzron1969 1.4.2"
     :common {:clauseType :Exobligative,
-	    :defClass :Neutral,
-	    :lexeme :des,
+	    :aspect :Neutral,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Converb}
@@ -667,7 +750,9 @@
     {:label "awngi-VSubordinateNegVarB-des"
     :note "Hetzron1969 1.2.14"
     :common {:clauseType :Subordinate,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :varClass :VarB}
@@ -683,7 +768,9 @@
     {:label "awngi-VTerminative-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :ne,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person2, "nimba"],
@@ -697,8 +784,10 @@
     {:label "awngi-VMainPerfDef-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :aq,
+	    :aspect :Definite,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -713,8 +802,10 @@
     {:label "awngi-VMainImperfDef-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :ey,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -729,7 +820,9 @@
     {:label "awngi-VStative-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :ne,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person3, "nûs"],
@@ -743,7 +836,9 @@
     {:label "awngi-VTemporal-des"
     :note "Hetzron1969 1.2.7"
     :common {:clauseType :Temporal,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person2, "destání"],
@@ -757,8 +852,10 @@
     {:label "awngi-VMainImperfDef-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :aq,
+	    :aspect :Definite,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -773,8 +870,10 @@
     {:label "awngi-VMainAffImperfDef-des"
     :note "STRUCTURE:\n\r\n\r/STRUCTURE\nCONTENT:\n\r\n\r/CONTENT"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -790,7 +889,9 @@
     {:label "awngi-VRelSubjAffPerf-des"
     :note "Hetzron1969 1.2.4"
     :common {:clauseType :RelSubj,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
@@ -806,8 +907,10 @@
     {:label "awngi-VMainImperfIndef-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :jep,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -822,8 +925,10 @@
     {:label "awngi-VDurativePerf-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :egog,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -838,8 +943,10 @@
     {:label "awngi-VMainImperfIndef-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :leqleq,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -854,7 +961,9 @@
     {:label "awngi-VTerminative-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :fay,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "fanémba"],
@@ -868,8 +977,10 @@
     {:label "awngi-VPredestinativePerfDef-des"
     :note "Hetzron1969 1.4.1"
     :common {:clauseType :Predestinative,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token, :varB]  ;; schema
@@ -886,7 +997,9 @@
     {:label "awngi-VTerminative-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :leqleq,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "ləqləqinimba"],
@@ -900,8 +1013,10 @@
     {:label "awngi-VMainPerfDef-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :ey,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -916,7 +1031,9 @@
     {:label "awngi-VStative-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :egog,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "əɣóɣtûs"],
@@ -930,7 +1047,9 @@
     {:label "awngi-VCompound-des"
     :note "Hetzron1969 1.3.0"
     :common {:clauseType :Compound,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person3, "desa-"],
@@ -944,8 +1063,10 @@
     {:label "awngi-VMainNegImperfIndef-des"
     :note "STRUCTURE:\n\r\n\r/STRUCTURE\nCONTENT:\n\r\n\r/CONTENT"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -961,8 +1082,10 @@
     {:label "awngi-VMainImperfDef-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :leqleq,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -977,8 +1100,10 @@
     {:label "awngi-VDurativePerfDef-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :ne,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -993,8 +1118,10 @@
     {:label "awngi-VMainPerfDef-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :ne,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1009,8 +1136,10 @@
     {:label "awngi-VMainAffImperfIndef-des"
     :note "STRUCTURE:\n\r\n\r/STRUCTURE\nCONTENT:\n\r\n\r/CONTENT"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -1026,8 +1155,10 @@
     {:label "awngi-VApodosisAffIndef-des"
     :note "Hetzron1969 1.2.13"
     :common {:clauseType :Apodosis,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1042,7 +1173,9 @@
     {:label "awngi-VRelSubjAffImperf-des"
     :note "Hetzron1969 1.2.4"
     :common {:clauseType :RelSubj,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -1058,8 +1191,10 @@
     {:label "awngi-VExobligativeAffImperfDef-des"
     :note "Hetzron1969 1.4.2"
     :common {:clauseType :Exobligative,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -1075,7 +1210,9 @@
     {:label "awngi-VStative-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :leqleq,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "ləqləqanis"],
@@ -1089,7 +1226,9 @@
     {:label "awngi-VTerminative-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :ey,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person3, "əytə́mba"],
@@ -1103,7 +1242,9 @@
     {:label "awngi-VTerminative-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :jep,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "jewtínimba"],
@@ -1117,7 +1258,9 @@
     {:label "awngi-VSubjunctiveNeg-des"
     :note "Hetzron1969 1.2.1-3"
     :common {:clauseType :Subjunctive,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1132,7 +1275,9 @@
     {:label "awngi-VProtasisAffPerf-des"
     :note "Hetzron1969 1.2.12"
     :common {:clauseType :Protasis,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
@@ -1148,7 +1293,9 @@
     {:label "awngi-VTemporal-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :aq,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "áqání"],
@@ -1162,7 +1309,9 @@
     {:label "awngi-VSubordinateNegVarA-des"
     :note "Hetzron1969 1.2.14"
     :common {:clauseType :Subordinate,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :varClass :VarA}
@@ -1178,8 +1327,10 @@
     {:label "awngi-VMainPerfIndef-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :ey,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1194,7 +1345,9 @@
     {:label "awngi-VDesiderativeImperf-des"
     :note "Hetzron1969 1.2.5"
     :common {:clauseType :Desiderative,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1209,8 +1362,10 @@
     {:label "awngi-VDurativeAffConverb-des"
     :note "Hetzron1969 1.3.3"
     :common {:clauseType :Durative,
-	    :defClass :Neutral,
-	    :lexeme :des,
+	    :aspect :Neutral,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Converb}
@@ -1226,7 +1381,9 @@
     {:label "awngi-VProcessiveNeg-des"
     :note "Hetzron1969 1.2.1-3"
     :common {:clauseType :Processive,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1241,8 +1398,10 @@
     {:label "awngi-VDurativePerf-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :kant,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1257,7 +1416,9 @@
     {:label "awngi-VMainNegImprtv-des"
     :note ""
     :common {:clauseType :Main,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperative}
@@ -1273,8 +1434,10 @@
     {:label "awngi-VMainPerfIndef-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :leqleq,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1290,7 +1453,9 @@
     :note ""
     :common {:clauseType :Main,
 	    :gender :Common,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :person :Common,
 	    :polarity :Negative,
 	    :pos :Verb,
@@ -1302,8 +1467,10 @@
     {:label "awngi-VDurativePerfDef-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :jep,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1318,8 +1485,10 @@
     {:label "awngi-VMainPerfIndef-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :ne,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1334,7 +1503,9 @@
     {:label "awngi-VProtasisImperf-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :kant,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1349,8 +1520,10 @@
     {:label "awngi-VMainNegPerfIndef-des"
     :note "STRUCTURE:\n\r\n\r/STRUCTURE\nCONTENT:\n\r\n\r/CONTENT"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Perfect}
@@ -1366,7 +1539,9 @@
     {:label "awngi-VTemporal-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :fay,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "fanání"],
@@ -1380,7 +1555,9 @@
     {:label "awngi-VTemporal-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :ne,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person2, "není"],
@@ -1394,7 +1571,9 @@
     {:label "awngi-VRelSubjNegImperf-des"
     :note "Hetzron1969 1.2.4"
     :common {:clauseType :RelSubj,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -1410,8 +1589,10 @@
     {:label "awngi-VMainPerfIndef-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :fay,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1426,7 +1607,9 @@
     {:label "awngi-VTemporal-leqleq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Temporal,
-	    :lexeme :leqleq,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1342,
+            :lexeme :leqleq,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "ləqləqani"],
@@ -1440,11 +1623,13 @@
     {:label "awngi-VDurativeNegDefDef-des"
     :note "Hetzron1969 1.3.3"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :tam :Definite}
+	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "deskayas̆ínà"],
 	    [:Common, :Plural, :Person2, "destə́kayas̆tínà"],
@@ -1457,8 +1642,10 @@
     {:label "awngi-VMainImperfIndef-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :fay,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1473,7 +1660,9 @@
     {:label "awngi-VProtasisImperf-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :ey,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1488,7 +1677,9 @@
     {:label "awngi-VTerminativeNeg-des"
     :note "Hetzron1969 1.2.11"
     :common {:clauseType :Terminative,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1503,7 +1694,9 @@
     {:label "awngi-VStative-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :aq,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person2, "táɣûs"],
@@ -1517,8 +1710,10 @@
     {:label "awngi-VMainPerfDef-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :kant,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1533,7 +1728,9 @@
     {:label "awngi-VDesiderativePerf-des"
     :note "Hetzron1969 1.2.5"
     :common {:clauseType :Desiderative,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1548,8 +1745,10 @@
     {:label "awngi-VDurativePerfDef-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :aq,
+	    :aspect :Definite,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1564,7 +1763,9 @@
     {:label "awngi-VStativePerfVar2-des"
     :note "Hetzron1969 1.2.8"
     :common {:clauseType :Stative,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Perfect,
 	    :varClass :Var2}
@@ -1579,9 +1780,12 @@
     }
     {:label "awngi-VConverb-des"
     :note "Hetzron1969 1.2.1-3"
-    :common {:clauseType :Converb,
-	    :lexeme :des,
-	    :pos :Verb}
+    :common {:clauseType :Consecutive,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
+	    :pos :Verb
+             :tam :Converb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "desnana"],
 	    [:Common, :Singular, :Person1, "desata"],
@@ -1594,8 +1798,10 @@
     {:label "awngi-VPredestinativeImperfDef-des"
     :note "Hetzron1969 1.4.1"
     :common {:clauseType :Predestinative,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token, :varB]  ;; schema
@@ -1612,8 +1818,10 @@
     {:label "awngi-VMainImperfDef-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :ne,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1628,8 +1836,10 @@
     {:label "awngi-VMainImperfDef-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :fay,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1644,8 +1854,10 @@
     {:label "awngi-VMainAffPerfDef-des"
     :note "STRUCTURE:\n\r\n\r/STRUCTURE\nCONTENT:\n\r\n\r/CONTENT"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Perfect}
@@ -1661,8 +1873,10 @@
     {:label "awngi-VMainNegImperfDef-des"
     :note "STRUCTURE:\n\r\n\r/STRUCTURE\nCONTENT:\n\r\n\r/CONTENT"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Imperfect}
@@ -1678,9 +1892,11 @@
     {:label "awngi-VExobligativeNegImperfDef-des"
     :note "Hetzron1969 1.4.2"
     :common {:clauseType :Exobligative,
-	    :defClass :Definite,
+	    :aspect :Definite,
 	    :gender :Common,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :number :Singular,
 	    :person :Person1,
 	    :polarity :Negative,
@@ -1692,8 +1908,10 @@
     {:label "awngi-VMainImperfIndef-ey"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :ey,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1214,
+            :lexeme :ey,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1708,8 +1926,10 @@
     {:label "awngi-VMainImperfDef-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Definite,
-	    :lexeme :jep,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1724,7 +1944,9 @@
     {:label "awngi-VProtasisImperf-aq"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :aq,
+	    :conjClass :Prefix,
+            :conjSubClass :IC11,
+            :lexeme :aq,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1739,7 +1961,9 @@
     {:label "awngi-VProtasisImperf-ne"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :ne,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1611,
+            :lexeme :ne,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1754,7 +1978,9 @@
     {:label "awngi-VTerminativeAff-des"
     :note "Hetzron1969 1.2.11"
     :common {:clauseType :Terminative,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1769,7 +1995,9 @@
     {:label "awngi-VStativeImperf-des"
     :note "Hetzron1969 1.2.8"
     :common {:clauseType :Stative,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1784,11 +2012,13 @@
     {:label "awngi-VDurativeAffDefDef-des"
     :note "Hetzron1969 1.3.3"
     :common {:clauseType :Durative,
-	    :defClass :Definite,
-	    :lexeme :des,
+	    :aspect :Definite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :Definite}
+	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "desas̆túɣà"],
 	    [:Fem, :Singular, :Person3, "destas̆tí ɣʷà"],
@@ -1801,7 +2031,9 @@
     {:label "awngi-VPosteriorVarB-des"
     :note "Hetzron1969 1.2.10"
     :common {:clauseType :Posterior,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :varClass :VarB}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1816,8 +2048,10 @@
     {:label "awngi-VPredestinativeImperfIndef-des"
     :note "Hetzron1969 1.4.1"
     :common {:clauseType :Predestinative,
-	    :defClass :Indefinite,
-	    :lexeme :des,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token, :varB]  ;; schema
@@ -1834,8 +2068,10 @@
     {:label "awngi-VMainPerfIndef-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :jep,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1850,7 +2086,9 @@
     {:label "awngi-VStative-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :fay,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "fayánis"],
@@ -1864,7 +2102,9 @@
     {:label "awngi-VPosteriorVarA-des"
     :note "Hetzron1969 1.2.10"
     :common {:clauseType :Posterior,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb,
 	    :varClass :VarA}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1879,7 +2119,9 @@
     {:label "awngi-VProtasisNegPerf-des"
     :note "Hetzron1969 1.2.12"
     :common {:clauseType :Protasis,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Perfect}
@@ -1895,8 +2137,10 @@
     {:label "awngi-VMainImperfIndef-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Main,
-	    :defClass :Indefinite,
-	    :lexeme :egog,
+	    :aspect :Indefinite,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1911,7 +2155,9 @@
     {:label "awngi-VSubjunctiveAff-des"
     :note "Hetzron1969 1.2.1-3"
     :common {:clauseType :Subjunctive,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Affirmative,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1926,7 +2172,9 @@
     {:label "awngi-VProtasisImperf-egog"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :egog,
+	    :conjClass :Suffix,
+            :conjSubClass :IC15112,
+            :lexeme :egog,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1941,7 +2189,9 @@
     {:label "awngi-VImmediate-des"
     :note "Hetzron1969 1.2.9"
     :common {:clauseType :Immediate,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "desunta"],
@@ -1955,7 +2205,9 @@
     {:label "awngi-VProtasisImperf-fay"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Protasis,
-	    :lexeme :fay,
+	    :conjClass :Suffix,
+            :conjSubClass :IC142,
+            :lexeme :fay,
 	    :pos :Verb,
 	    :tam :Imperfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
@@ -1970,7 +2222,9 @@
     {:label "awngi-VStative-jep"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Stative,
-	    :lexeme :jep,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1221,
+            :lexeme :jep,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "jewnús"],
@@ -1984,7 +2238,9 @@
     {:label "awngi-VTerminative-kant"
     :note "Hetzron1969 pp. 118-121"
     :common {:clauseType :Terminative,
-	    :lexeme :kant,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1351b,
+            :lexeme :kant,
 	    :pos :Verb}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person1, "kantnə́mba"],
@@ -1998,7 +2254,9 @@
     {:label "awngi-VRelSubjNegPerf-des"
     :note "Hetzron1969 1.2.4"
     :common {:clauseType :RelSubj,
-	    :lexeme :des,
+	    :conjClass :Suffix,
+            :conjSubClass :IC1211,
+            :lexeme :des,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Perfect}

@@ -6,8 +6,7 @@
 :datasourceNotes "Hetzron1969b, Chapter 2, 'Verb Classes',  recognizes some 40 inflectional classes subdividing both the prefix and suffix-conjugation verbs. These are based on intersecting criteria of: 'Pattern' (base tone-pattern), 'Type' (associated png-marker set), and 'Group' (tone-effect on subsequent syllable). Pending a more thorough-going analysis, these classes are taken as brute inflectional classes, and are here designated according to the decimal subdivision of Chapter 2 where each class is identified."
 :geodemoURL "http://www.ethnologue.com/language/awn"
 :geodemoTXT "Varieties and subdialects of Agaw (or Central) Cushitic language: Awngi is spoken mainly in the Amhara region, southwest of Lake Tana, and in scattered nearby localities. The variety represented here is that of the village of Bert'a Abbo in the province of Agawmeder, as described by Robert Hetzron in his 1969 monograph."
-:schemata{:status [:NA],
-          :gender [:Common :Fem :Masc],
+:schemata{:gender [:Common :Fem :Masc],
           :varClass [:Var1 :Var2 :VarA :VarB],
           :varB [:VarB1 :VarB2 :VarB3 :VarBx],
           :conjSubClass [:IC11 :IC1211 :IC1221 :IC1214 :IC1351b :IC1342 :IC142 :IC15112 :IC1611],
@@ -19,6 +18,7 @@
           :person [:Person1 :Person2 :Person3],
           :morphClass [:SuffAlternate],
           :proClass [:To_be_added],
+          :status [:NA],
           :tam [:Converb :Imperative :Imperfect :Order :Perfect],
           :clauseType [:Apodosis :Compound :Consecutive :Desiderative :Durative :Exobligative :Immediate :Main :Posterior :Predestinative :Processive :Protasis :RelSubj :Stative :Subjunctive :Subordinate :Temporal :Terminative],
           :number [:Plural :Singular]}

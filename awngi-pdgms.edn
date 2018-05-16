@@ -37,7 +37,7 @@
  :termclusters [
                 {:label "awngi-VApodosisAffDef-des"
                  :note "Hetzron1969 1.2.13"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Apodosis,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -56,7 +56,7 @@
                  }
                 {:label "awngi-VApodosisAffIndef-des"
                  :note "Hetzron1969 1.2.13"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Apodosis,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -75,7 +75,7 @@
                  }
                 {:label "awngi-VApodosisNegDef-des"
                  :note "Hetzron1969 1.2.13"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Apodosis,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -94,7 +94,7 @@
                  }
                 {:label "awngi-VApodosisNegIndef-des"
                  :note "Hetzron1969 1.2.13"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Apodosis,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -113,7 +113,7 @@
                  }
                 {:label "awngi-VCompound-des"
                  :note "Hetzron1969 1.3.0"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Compound,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -130,7 +130,7 @@
                  }
                 {:label "awngi-VConverb-des"
                  :note "Hetzron1969 1.2.1-3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Consecutive,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -148,7 +148,7 @@
                  }
                 {:label "awngi-VDesiderativeImperf-des"
                  :note "Hetzron1969 1.2.5"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Desiderative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -166,7 +166,7 @@
                  }
                 {:label "awngi-VDesiderativePerf-des"
                  :note "Hetzron1969 1.2.5"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Desiderative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -184,7 +184,7 @@
                  }
                 {:label "awngi-VDurativeAffConverb-des"
                  :note "Hetzron1969 1.3.3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Neutral,
                           :conjClass :Suffix,
@@ -204,7 +204,7 @@
                  }
                 {:label "awngi-VDurativeAffDefDef-des"
                  :note "Hetzron1969 1.3.3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -224,7 +224,7 @@
                  }
                 {:label "awngi-VDurativeNegConverb-des"
                  :note "Hetzron1969 1.3.3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Neutral,
                           :conjClass :Suffix,
@@ -244,7 +244,7 @@
                  }
                 {:label "awngi-VDurativeNegDefDef-des"
                  :note "Hetzron1969 1.3.3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -264,7 +264,7 @@
                  }
                 {:label "awngi-VDurativePerf-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -284,7 +284,7 @@
                  }
                 {:label "awngi-VDurativePerf-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -304,7 +304,7 @@
                  }
                 {:label "awngi-VDurativePerf-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -324,7 +324,7 @@
                  }
                 {:label "awngi-VDurativePerf-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -344,7 +344,7 @@
                  }
                 {:label "awngi-VDurativePerfDef-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Prefix,
@@ -364,7 +364,7 @@
                  }
                 {:label "awngi-VDurativePerfDef-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -384,7 +384,7 @@
                  }
                 {:label "awngi-VDurativePerfDef-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -404,7 +404,7 @@
                  }
                 {:label "awngi-VDurativePerfDef-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Durative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -424,7 +424,7 @@
                  }
                 {:label "awngi-VExobligativeAffConverb-des"
                  :note "Hetzron1969 1.4.2"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Exobligative,
                           :aspect :Neutral,
                           :conjClass :Suffix,
@@ -444,7 +444,7 @@
                  }
                 {:label "awngi-VExobligativeAffImperfDef-des"
                  :note "Hetzron1969 1.4.2"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Exobligative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -464,7 +464,7 @@
                  }
                 {:label "awngi-VExobligativeNegConverb-des"
                  :note "Hetzron1969 1.4.2"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :gender :Common,
                           :conjSubClass :IC1211,
                           :polarity :Negative,
@@ -481,7 +481,7 @@
                  }
                 {:label "awngi-VExobligativeNegImperfDef-des"
                  :note "Hetzron1969 1.4.2"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :gender :Common,
                           :conjSubClass :IC1211,
                           :polarity :Negative,
@@ -498,7 +498,7 @@
                  }
                 {:label "awngi-VImmediate-des"
                  :note "Hetzron1969 1.2.9"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Immediate,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -536,7 +536,7 @@
                  }
                 {:label "awngi-VMainAffImperfDef-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -556,7 +556,7 @@
                  }
                 {:label "awngi-VMainAffImperfIndef-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -576,7 +576,7 @@
                  }
                 {:label "awngi-VMainAffImprtv-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -595,7 +595,7 @@
                  }
                 {:label "awngi-VMainAffOrder-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :gender :Common,
                           :conjSubClass :IC1211,
                           :polarity :Affirmative,
@@ -611,7 +611,7 @@
                  }
                 {:label "awngi-VMainAffPerfDef-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -631,7 +631,7 @@
                  }
                 {:label "awngi-VMainAffPerfIndef-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -651,7 +651,7 @@
                  }
                 {:label "awngi-VMainImperfDef-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Prefix,
@@ -671,7 +671,7 @@
                  }
                 {:label "awngi-VMainImperfDef-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -691,7 +691,7 @@
                  }
                 {:label "awngi-VMainImperfDef-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -711,7 +711,7 @@
                  }
                 {:label "awngi-VMainImperfDef-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -731,7 +731,7 @@
                  }
                 {:label "awngi-VMainImperfDef-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -751,7 +751,7 @@
                  }
                 {:label "awngi-VMainImperfDef-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -771,7 +771,7 @@
                  }
                 {:label "awngi-VMainImperfDef-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -791,7 +791,7 @@
                  }
                 {:label "awngi-VMainImperfDef-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -811,7 +811,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Prefix,
@@ -831,7 +831,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -851,7 +851,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -871,7 +871,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -891,7 +891,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -911,7 +911,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -931,7 +931,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -951,7 +951,7 @@
                  }
                 {:label "awngi-VMainImperfIndef-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -971,7 +971,7 @@
                  }
                 {:label "awngi-VMainNegImperfDef-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -991,7 +991,7 @@
                  }
                 {:label "awngi-VMainNegImperfIndef-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1011,7 +1011,7 @@
                  }
                 {:label "awngi-VMainNegImprtv-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1030,7 +1030,7 @@
                  }
                 {:label "awngi-VMainNegOrder-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :gender :Common,
                           :conjSubClass :IC1211,
                           :polarity :Negative,
@@ -1046,7 +1046,7 @@
                  }
                 {:label "awngi-VMainNegPerfIndef-des"
                  :note ""
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1066,7 +1066,7 @@
                  }
                 {:label "awngi-VMainPerfDef-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Prefix,
@@ -1086,7 +1086,7 @@
                  }
                 {:label "awngi-VMainPerfDef-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1106,7 +1106,7 @@
                  }
                 {:label "awngi-VMainPerfDef-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1126,7 +1126,7 @@
                  }
                 {:label "awngi-VMainPerfDef-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1146,7 +1146,7 @@
                  }
                 {:label "awngi-VMainPerfDef-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1166,7 +1166,7 @@
                  }
                 {:label "awngi-VMainPerfDef-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1186,7 +1186,7 @@
                  }
                 {:label "awngi-VMainPerfDef-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1206,7 +1206,7 @@
                  }
                 {:label "awngi-VMainPerfDef-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1226,7 +1226,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Prefix,
@@ -1246,7 +1246,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1266,7 +1266,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1286,7 +1286,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1306,7 +1306,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1326,7 +1326,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1346,7 +1346,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1366,7 +1366,7 @@
                  }
                 {:label "awngi-VMainPerfIndef-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Main,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1386,7 +1386,7 @@
                  }
                 {:label "awngi-VPosteriorVarA-des"
                  :note "Hetzron1969 1.2.10"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Posterior,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1404,7 +1404,7 @@
                  }
                 {:label "awngi-VPosteriorVarB-des"
                  :note "Hetzron1969 1.2.10"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Posterior,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1422,7 +1422,7 @@
                  }
                 {:label "awngi-VPredestinativeImperfDef-des"
                  :note "Hetzron1969 1.4.1"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Predestinative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1443,7 +1443,7 @@
                  }
                 {:label "awngi-VPredestinativeImperfIndef-des"
                  :note "Hetzron1969 1.4.1"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Predestinative,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1464,7 +1464,7 @@
                  }
                 {:label "awngi-VPredestinativePerfDef-des"
                  :note "Hetzron1969 1.4.1"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Predestinative,
                           :aspect :Definite,
                           :conjClass :Suffix,
@@ -1485,7 +1485,7 @@
                  }
                 {:label "awngi-VPredestinativePerfIndef-des"
                  :note "Hetzron1969 1.4.1"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Predestinative,
                           :aspect :Indefinite,
                           :conjClass :Suffix,
@@ -1506,7 +1506,7 @@
                  }
                 {:label "awngi-VProcessiveAff-des"
                  :note "Hetzron1969 1.2.1-3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Processive,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1524,7 +1524,7 @@
                  }
                 {:label "awngi-VProcessiveNeg-des"
                  :note "Hetzron1969 1.2.1-3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Processive,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1542,7 +1542,7 @@
                  }
                 {:label "awngi-VProtasisAffImperf-des"
                  :note "Hetzron1969 1.2.12"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1561,7 +1561,7 @@
                  }
                 {:label "awngi-VProtasisAffPerf-des"
                  :note "Hetzron1969 1.2.12"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1580,7 +1580,7 @@
                  }
                 {:label "awngi-VProtasisImperf-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Prefix,
                           :conjSubClass :IC11,
@@ -1599,7 +1599,7 @@
                  }
                 {:label "awngi-VProtasisImperf-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC15112,
@@ -1618,7 +1618,7 @@
                  }
                 {:label "awngi-VProtasisImperf-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1214,
@@ -1637,7 +1637,7 @@
                  }
                 {:label "awngi-VProtasisImperf-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC142,
@@ -1656,7 +1656,7 @@
                  }
                 {:label "awngi-VProtasisImperf-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1221,
@@ -1675,7 +1675,7 @@
                  }
                 {:label "awngi-VProtasisImperf-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1351b,
@@ -1694,7 +1694,7 @@
                  }
                 {:label "awngi-VProtasisImperf-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
@@ -1713,7 +1713,7 @@
                  }
                 {:label "awngi-VProtasisImperf-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1611,
@@ -1732,7 +1732,7 @@
                  }
                 {:label "awngi-VProtasisNegImperf-des"
                  :note "Hetzron1969 1.2.12"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1751,7 +1751,7 @@
                  }
                 {:label "awngi-VProtasisNegPerf-des"
                  :note "Hetzron1969 1.2.12"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1770,7 +1770,7 @@
                  }
                 {:label "awngi-VRelSubjAffImperf-des"
                  :note "Hetzron1969 1.2.4"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :RelSubj,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1789,7 +1789,7 @@
                  }
                 {:label "awngi-VRelSubjAffPerf-des"
                  :note "Hetzron1969 1.2.4"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :RelSubj,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1808,7 +1808,7 @@
                  }
                 {:label "awngi-VRelSubjNegImperf-des"
                  :note "Hetzron1969 1.2.4"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :RelSubj,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1827,7 +1827,7 @@
                  }
                 {:label "awngi-VRelSubjNegPerf-des"
                  :note "Hetzron1969 1.2.4"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :RelSubj,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -1846,7 +1846,7 @@
                  }
                 {:label "awngi-VStative-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Prefix,
                           :conjSubClass :IC11,
@@ -1864,7 +1864,7 @@
                  }
                 {:label "awngi-VStative-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC15112,
@@ -1882,7 +1882,7 @@
                  }
                 {:label "awngi-VStative-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1214,
@@ -1900,7 +1900,7 @@
                  }
                 {:label "awngi-VStative-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC142,
@@ -1918,7 +1918,7 @@
                  }
                 {:label "awngi-VStative-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1221,
@@ -1936,7 +1936,7 @@
                  }
                 {:label "awngi-VStative-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1351b,
@@ -1954,7 +1954,7 @@
                  }
                 {:label "awngi-VStative-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
@@ -1972,7 +1972,7 @@
                  }
                 {:label "awngi-VStative-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1611,
@@ -1990,7 +1990,7 @@
                  }
                 {:label "awngi-VStativeImperf-des"
                  :note "Hetzron1969 1.2.8"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2008,7 +2008,7 @@
                  }
                 {:label "awngi-VStativePerfVar1-des"
                  :note "Hetzron1969 1.2.8"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2027,7 +2027,7 @@
                  }
                 {:label "awngi-VStativePerfVar2-des"
                  :note "Hetzron1969 1.2.8"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2046,7 +2046,7 @@
                  }
                 {:label "awngi-VSubjunctiveAff-des"
                  :note "Hetzron1969 1.2.1-3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Subjunctive,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2064,7 +2064,7 @@
                  }
                 {:label "awngi-VSubjunctiveNeg-des"
                  :note "Hetzron1969 1.2.1-3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Subjunctive,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2082,7 +2082,7 @@
                  }
                 {:label "awngi-VSubordinateNegVarA-des"
                  :note "Hetzron1969 1.2.14"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Subordinate,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2101,7 +2101,7 @@
                  }
                 {:label "awngi-VSubordinateNegVarB-des"
                  :note "Hetzron1969 1.2.14"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Subordinate,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2120,7 +2120,7 @@
                  }
                 {:label "awngi-VTemporal-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Prefix,
                           :conjSubClass :IC11,
@@ -2138,7 +2138,7 @@
                  }
                 {:label "awngi-VTemporal-des"
                  :note "Hetzron1969 1.2.7"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2155,7 +2155,7 @@
                  }
                 {:label "awngi-VTemporal-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC15112,
@@ -2173,7 +2173,7 @@
                  }
                 {:label "awngi-VTemporal-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC1214,
@@ -2191,7 +2191,7 @@
                  }
                 {:label "awngi-VTemporal-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC142,
@@ -2209,7 +2209,7 @@
                  }
                 {:label "awngi-VTemporal-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC1221,
@@ -2227,7 +2227,7 @@
                  }
                 {:label "awngi-VTemporal-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC1351b,
@@ -2245,7 +2245,7 @@
                  }
                 {:label "awngi-VTemporal-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
@@ -2263,7 +2263,7 @@
                  }
                 {:label "awngi-VTemporal-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC1611,
@@ -2281,7 +2281,7 @@
                  }
                 {:label "awngi-VTerminative-aq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Prefix,
                           :conjSubClass :IC11,
@@ -2299,7 +2299,7 @@
                  }
                 {:label "awngi-VTerminative-egog"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC15112,
@@ -2317,7 +2317,7 @@
                  }
                 {:label "awngi-VTerminative-ey"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1214,
@@ -2335,7 +2335,7 @@
                  }
                 {:label "awngi-VTerminative-fay"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC142,
@@ -2353,7 +2353,7 @@
                  }
                 {:label "awngi-VTerminative-jep"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1221,
@@ -2371,7 +2371,7 @@
                  }
                 {:label "awngi-VTerminative-kant"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1351b,
@@ -2389,7 +2389,7 @@
                  }
                 {:label "awngi-VTerminative-leqleq"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
@@ -2407,7 +2407,7 @@
                  }
                 {:label "awngi-VTerminative-ne"
                  :note "Hetzron1969 pp. 118-121"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1611,
@@ -2425,7 +2425,7 @@
                  }
                 {:label "awngi-VTerminativeAff-des"
                  :note "Hetzron1969 1.2.11"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,
@@ -2443,7 +2443,7 @@
                  }
                 {:label "awngi-VTerminativeNeg-des"
                  :note "Hetzron1969 1.2.11"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1211,

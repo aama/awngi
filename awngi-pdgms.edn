@@ -6,21 +6,23 @@
  :datasourceNotes "Hetzron1969b, Chapter 2, 'Verb Classes',  recognizes some 40 inflectional classes subdividing both the prefix and suffix-conjugation verbs. These are based on intersecting criteria of: 'Pattern' (base tone-pattern), 'Type' (associated png-marker set), and 'Group' (tone-effect on subsequent syllable). Pending a more thorough-going analysis, these classes are taken as brute inflectional classes, and are here designated according to the decimal subdivision of Chapter 2 where each class is identified."
  :geodemoURL "http://www.ethnologue.com/language/awn"
  :geodemoTXT "Varieties and subdialects of Agaw (or Central) Cushitic language: Awngi is spoken mainly in the Amhara region, southwest of Lake Tana, and in scattered nearby localities. The variety represented here is that of the village of Bert'a Abbo in the province of Agawmeder, as described by Robert Hetzron in his 1969 monograph."
-:schemata {:aspect [:Definite :Indefinite :Neutral],
-           :clauseType [:Apodosis :Compound :Consecutive :Desiderative :Durative :Exobligative :Immediate :Main :Posterior :Predestinative :Processive :Protasis :RelSubj :Stative :Subjunctive :Subordinate :Temporal :Terminative],
-           :conjClass [:Prefix :Suffix],
-           :conjSubClass [:IC11 :IC1211 :IC1214 :IC1221 :IC1342 :IC1351b :IC142 :IC15112 :IC1611],
-           :gender [:Common :Fem :Masc],
-           :number [:Plural :Singular],
-           :person [:Common :Person1 :Person2 :Person3],
-           :polarity [:Affirmative :Negative],
-           :pos [:Pronoun :Verb],
-           :proClass [:To_be_added],
-           :tam [:Converb :Imperative :Imperfect :Order :Perfect],
-           :varB [:VarB1 :VarB2 :VarB3 :VarBx],
-           :varClass [:Var1 :Var2 :VarA :VarB],
-           :vmorphClass [:Finite :SuffAlternate]
-           }
+:schemata {:lexeme [:aq  :des :egog :ey :fay :jep :kant :leqleq :ne],
+ :aspect [:Definite :Indefinite :Neutral],
+ :clauseType [:Apodosis :Compound :Consecutive :Desiderative :Durative :Exobligative :Immediate :Main :Posterior :Predestinative :Processive :Protasis :RelSubj :Stative :Subjunctive :Subordinate :Temporal :Terminative],
+ :conjClass [:Prefix :Suffix],
+ :conjSubClass [:IC11 :IC1211 :IC1214 :IC1221 :IC1342 :IC1351b :IC142 :IC15112 :IC1611],
+ :gender [:Common :Fem :Masc],
+ :number [:Plural :Singular],
+ :person [:Common :Person1 :Person2 :Person3],
+ :pmorphClass [:ProMorph],
+ :polarity [:Affirmative :Negative],
+ :pos [:Pronoun :Verb],
+ :proClass [:To_be_added],
+ :tam [:Converb :Imperative :Imperfect :Order :Perfect],
+ :varB [:VarB1 :VarB2 :VarB3 :VarBx],
+ :varClass [:Var1 :Var2 :VarA :VarB],
+ :vmorphClass [:Finite :SuffAlternate]
+ }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :clausetype :derivedStem :polarity :pos :proClass :tam :tenseName],
           :inflClass [:varClass :varB :conjClass :conjSubClass],
@@ -329,7 +331,7 @@
                           :aspect :Definite,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb,
                           :tam :Perfect}
@@ -776,7 +778,7 @@
                           :aspect :Definite,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb,
                           :tam :Imperfect}
@@ -936,7 +938,7 @@
                           :aspect :Indefinite,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb,
                           :tam :Imperfect}
@@ -1191,7 +1193,7 @@
                           :aspect :Definite,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb,
                           :tam :Perfect}
@@ -1351,7 +1353,7 @@
                           :aspect :Indefinite,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb,
                           :tam :Perfect}
@@ -1698,7 +1700,7 @@
                           :clauseType :Protasis,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb,
                           :tam :Imperfect}
@@ -1958,7 +1960,7 @@
                           :clauseType :Stative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb}
                  :terms [[:number :person :gender :token],
@@ -2249,7 +2251,7 @@
                           :clauseType :Temporal,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb}
                  :terms [[:number :person :gender :token],
@@ -2393,7 +2395,7 @@
                           :clauseType :Terminative,
                           :conjClass :Suffix,
                           :conjSubClass :IC1342,
-                          :lexeme :leqlea,
+                          :lexeme :leqleq,
                           :polarity :Affirmative,
                           :pos :Verb}
                  :terms [[:number :person :gender :token],
@@ -2460,7 +2462,7 @@
                          [:Plural :Person3 :Common "desítínimba"]]
                  }
                 {:label "Pronominal_Paradigms_to_be_added"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :To_be_added}
                  :terms [[:token],
                          ["not attested"]]

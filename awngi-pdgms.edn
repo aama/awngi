@@ -6,8 +6,7 @@
  :datasourceNotes "Hetzron1969b, Chapter 2, 'Verb Classes',  recognizes some 40 inflectional classes subdividing both the prefix and suffix-conjugation verbs. These are based on intersecting criteria of: 'Pattern' (base tone-pattern), 'Type' (associated png-marker set), and 'Group' (tone-effect on subsequent syllable). Pending a more thorough-going analysis, these classes are taken as brute inflectional classes, and are here designated according to the decimal subdivision of Chapter 2 where each class is identified."
  :geodemoURL "http://www.ethnologue.com/language/awn"
  :geodemoTXT "Varieties and subdialects of Agaw (or Central) Cushitic language: Awngi is spoken mainly in the Amhara region, southwest of Lake Tana, and in scattered nearby localities. The variety represented here is that of the village of Bert'a Abbo in the province of Agawmeder, as described by Robert Hetzron in his 1969 monograph."
-:schemata {:lexeme [:aq  :des :egog :ey :fay :jep :kant :leqleq :ne],
- :aspect [:Definite :Indefinite :Neutral],
+:schemata { :aspect [:Definite :Indefinite :Neutral],
  :clauseType [:Apodosis :Compound :Consecutive :Desiderative :Durative :Exobligative :Immediate :Main :Posterior :Predestinative :Processive :Protasis :RelSubj :Stative :Subjunctive :Subordinate :Temporal :Terminative],
  :conjClass [:Prefix :Suffix],
  :conjSubClass [:IC11 :IC1211 :IC1214 :IC1221 :IC1342 :IC1351b :IC142 :IC15112 :IC1611],
@@ -27,15 +26,17 @@
           :synsemClass [:case :clausetype :derivedStem :polarity :pos :proClass :tam :tenseName],
           :inflClass [:varClass :varB :conjClass :conjSubClass],
           :otherClass []}
- :lexemes{:jep {:gloss "buy", :lemma "jewŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1221},
-          :egog {:gloss "laugh", :lemma "əɣoɣiŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC15112},
-          :des {:gloss "study", :lemma "desəŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1211},
-          :ne {:gloss "say", :lemma "nəŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1611},
-          :ey {:gloss "give", :lemma "əyəŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1214},
-          :aq {:gloss "be", :lemma "yaɣəŋ", :pos :Verb, :conjClass :Prefix, :conjSubClass :IC11},
-          :leqleq {:gloss "sway", :lemma "ləqləqiŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1342},
-          :kant {:gloss "see, look for", :lemma "kantəŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC1351b},
-          :fay {:gloss "want, look for", :lemma "fayŋ", :pos :Verb, :conjClass :Suffix, :conjSubClass :IC142}}
+ :lexemes {
+:aq   {:pos :Verb, :lemma "yaɣəŋ", :gloss "be", :conjClass :Prefix, :conjSubClass :IC11},
+:des   {:pos :Verb, :lemma "desəŋ", :gloss "study", :conjClass :Suffix, :conjSubClass :IC1211},
+:egog   {:pos :Verb, :lemma "əɣoɣiŋ", :gloss "laugh", :conjClass :Suffix, :conjSubClass :IC15112},
+:ey   {:pos :Verb, :lemma "əyəŋ", :gloss "give", :conjClass :Suffix, :conjSubClass :IC1214},
+:fay   {:pos :Verb, :lemma "fayŋ", :gloss "want, look for", :conjClass :Suffix, :conjSubClass :IC142},
+:jep   {:pos :Verb, :lemma "jewŋ", :gloss "buy", :conjClass :Suffix, :conjSubClass :IC1221},
+:kant   {:pos :Verb, :lemma "kantəŋ", :gloss "see, look for", :conjClass :Suffix, :conjSubClass :IC1351b},
+:leqleq   {:pos :Verb, :lemma "ləqləqiŋ", :gloss "sway", :conjClass :Suffix, :conjSubClass :IC1342},
+:ne   {:pos :Verb, :lemma "nəŋ", :gloss "say", :conjClass :Suffix, :conjSubClass :IC1611},
+}
  :termclusters [
                 {:label "awngi-VApodosisAffDef-des"
                  :note "Hetzron1969 1.2.13"
